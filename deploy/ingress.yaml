@@ -9,17 +9,17 @@ metadata:
 spec:
   ingressClassName: "ingress-nginx"
   rules:
-  - host: online-boutique.sandbox.runwhen.com
-    http:
-      paths:
-      - backend:
-          service:
-            name: frontend-external
-            port:
-              number: 80
-        path: /
-        pathType: Prefix
+    - host: online-boutique.sandbox.runwhen.com
+      http:
+        paths:
+          - backend:
+              service:
+                name: frontend-external
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
   tls:
-  - hosts:
-    - online-boutique.sandbox.runwhen.com
-    secretName: online-boutique-tls
+    - hosts:
+        - online-boutique.sandbox.runwhen.com
+      secretName: online-boutique-tls
