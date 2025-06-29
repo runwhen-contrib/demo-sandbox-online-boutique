@@ -231,7 +231,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  labels: 
+  labels:
     app: frontend
 spec:
   replicas: 3
@@ -515,7 +515,7 @@ spec:
           readinessProbe:
             initialDelaySeconds: 15
             exec:
-              command: ["/bin/grpc_health_probe", "-addr=:7071", "-rpc-timeout=5s"]
+              command: ["/bin/grpc_health_probe", "-addr=:7070", "-rpc-timeout=5s"]
           livenessProbe:
             initialDelaySeconds: 15
             periodSeconds: 10
@@ -539,7 +539,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: loadgenerator
-  labels: 
+  labels:
     app: loadgenerator
 spec:
   selector:
