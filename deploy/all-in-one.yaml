@@ -231,7 +231,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  labels: 
+  labels:
     app: frontend
 spec:
   replicas: 3
@@ -539,7 +539,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: loadgenerator
-  labels: 
+  labels:
     app: loadgenerator
 spec:
   selector:
