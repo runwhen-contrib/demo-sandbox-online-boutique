@@ -91,7 +91,7 @@ kind: Deployment
 metadata:
   name: checkoutservice
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: checkoutservice
