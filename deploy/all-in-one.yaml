@@ -476,6 +476,8 @@ metadata:
   name: cartservice
 spec:
   replicas: 1
+  labels:
+    discovered_label: automatica
   selector:
     matchLabels:
       app: cartservice
