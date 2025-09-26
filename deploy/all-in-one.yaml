@@ -709,6 +709,8 @@ spec:
               value: "50051"
             - name: DISABLE_PROFILER
               value: "1"
+            - name: TEST
+              value: "ME"
           readinessProbe:
             periodSeconds: 5
             exec:
