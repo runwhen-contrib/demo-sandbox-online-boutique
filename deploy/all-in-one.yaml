@@ -67,7 +67,7 @@ spec:
               command: ["/bin/grpc_health_probe", "-addr=:8080"]
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 50m
@@ -141,7 +141,7 @@ spec:
               value: "cartservice:7070"
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 50m
@@ -209,7 +209,7 @@ spec:
               value: "1"
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 220Mi
             limits:
               cpu: 50m
@@ -307,7 +307,7 @@ spec:
           #   value: "true"
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 50m
@@ -384,7 +384,7 @@ spec:
               command: ["/bin/grpc_health_probe", "-addr=:50051"]
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 50m
@@ -451,7 +451,7 @@ spec:
               command: ["/bin/grpc_health_probe", "-addr=:3550"]
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 50m
@@ -654,7 +654,7 @@ spec:
               command: ["/bin/grpc_health_probe", "-addr=:7000"]
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 50m
@@ -720,7 +720,7 @@ spec:
               command: ["/bin/grpc_health_probe", "-addr=:50051"]
           resources:
             requests:
-              cpu: 100m
+              cpu: 50m
               memory: 64Mi
             limits:
               cpu: 50m
