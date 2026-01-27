@@ -49,7 +49,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/emailservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/emailservice:dev
           ports:
             - containerPort: 8080
           env:
@@ -115,7 +115,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/checkoutservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/checkoutservice:dev
           ports:
             - containerPort: 5050
           readinessProbe:
@@ -189,7 +189,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/recommendationservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/recommendationservice:dev
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -261,7 +261,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/frontend:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/frontend:dev
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -368,7 +368,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/paymentservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/paymentservice:dev
           ports:
             - containerPort: 50051
           env:
@@ -435,7 +435,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/productcatalogservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/productcatalogservice:dev
           ports:
             - containerPort: 3550
           env:
@@ -500,7 +500,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/cartservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/cartservice:dev
           ports:
             - containerPort: 7070
           env:
@@ -594,7 +594,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/loadgenerator:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/loadgenerator:dev
           env:
             - name: FRONTEND_ADDR
               value: "frontend:80"
@@ -637,7 +637,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/currencyservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/currencyservice:dev
           ports:
             - name: grpc
               containerPort: 7000
@@ -701,7 +701,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/shippingservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/shippingservice:dev
           ports:
             - containerPort: 50051
           env:
@@ -833,7 +833,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: gcr.io/google-samples/microservices-demo/adservice:v0.5.1
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/adservice:dev
           ports:
             - containerPort: 9555
           env:
