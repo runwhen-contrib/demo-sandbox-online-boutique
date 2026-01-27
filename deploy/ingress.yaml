@@ -4,12 +4,12 @@ metadata:
   annotations:
     kubernetes.io/tls-acme: "true"
     cert-manager.io/cluster-issuer: letsencrypt-prod
-    external-dns.alpha.kubernetes.io/hostname: online-boutique.sandbox.runwhen.com.
+    external-dns.alpha.kubernetes.io/hostname: online-boutique-prod.sandbox.runwhen.com.
   name: online-boutique
 spec:
   ingressClassName: "ingress-nginx"
   rules:
-    - host: online-boutique.sandbox.runwhen.com
+    - host: online-boutique-prod.sandbox.runwhen.com
       http:
         paths:
           - backend:
@@ -21,5 +21,5 @@ spec:
             pathType: Prefix
   tls:
     - hosts:
-        - online-boutique.sandbox.runwhen.com
+        - online-boutique-prod.sandbox.runwhen.com
       secretName: online-boutique-tls
