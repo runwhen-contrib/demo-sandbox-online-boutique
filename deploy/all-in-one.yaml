@@ -1059,7 +1059,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/adservice:dev-630867d
+        image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/adservice:dev-eb19c83
         ports:
         - containerPort: 9555
         env:
