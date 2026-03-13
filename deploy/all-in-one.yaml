@@ -130,7 +130,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/checkoutservice:dev-630867d7
+          image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/checkoutservice:dev-630867d
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -1059,7 +1059,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/adservice:dev-630867d7
+        image: ghcr.io/runwhen-contrib/demo-sandbox-online-boutique-src/adservice:dev-630867d
         ports:
         - containerPort: 9555
         env:
